@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple facebook messanger chat bot",
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
