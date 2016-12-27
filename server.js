@@ -48,7 +48,7 @@ function sendTextMessage(sender, text) {
     var messageData = { text: text };
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token: 'EAAaZAcZBsTLJUBABHpdZAX5o2ERkrNwOGjDq3VMmfhjyM1pAwKm6MaUdeIyuIFT4sYNDL9ZBsDY8sVPcSXxrNlYkFCAmpf1obFnok1rr213JGopZCmiBeAQhvjpNZCBihMHWkTYZCApomR7r6t244OZA5LrbdhVUSitUBLoZAcagCkAZDZD'},
+        qs: {access_token: 'EAAQ9VLSks9gBAJmizjXNQAUQLZCam7EZAogYAPF6tSBHOPrwRRS9duzrq2Vh0d5VW145qya3CqXR2yjTjoIgTNNadDEvj9g3pbqwfeRh5cfKxr0pD1o2zbYmyfLSK2bExVWKoZBYMSP0ZCnFOIWK8SMLHA3b1ycN7p35kiQf8gZDZD'},
         method: 'POST',
         json: {
             recipient: {id: sender },
