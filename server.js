@@ -23,6 +23,7 @@ app.get('/webhook', function(req, res){
 //App start sending replies
 app.post('/webhook/', function(req, res){
     var messagingEvents = req.body.entry[0].messaging;
+    console.log('messagingEvents', messagingEvents);
     for(var i = 0; i < messagingEvents.length; i++){
         var event = req.body.entry[0].messaging[i];
         var sender = event.sender.id;
