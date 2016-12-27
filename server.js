@@ -29,7 +29,8 @@ app.post('/webhook/', function(req, res){
         var sender = event.sender.id;
         if(event.message && event.message.text){
             var text = event.message.text;
-            if(text === "Hi"){
+            text = text.toLowerCase();
+            if(text === "hi"){
                 text = "Hello";
                 sendTextMessage(sender, text.substring(0, 200));
             }
